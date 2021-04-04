@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <h1>Color Generator</h1>
+            <h3 class="colorCode">Hex Code</h3>
+        </header>
+        <div class='container'>
+            <section>
+                <div class="cubo finalColor"></div>
+            </section>
+            <aside>
+                <input type="range" class="Matiz" min="0" max="1535">
+                <input type="range" class="Transparencia" min="0" max="255">
+                <input type="range" class="Brillo" min="0" max="100">
+                <input type="range" class="Saturacion" min="0" max="100">
+                <div class="cubo colorSelector">
+                    <div class="base"></div>
+                    <div class="blanco"></div>
+                    <div class="negro"></div>
+                    <div class="point"></div>
+                </div>
+            </aside>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>

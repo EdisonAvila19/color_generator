@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  background-color: #aad3e4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header * {
+  width: 50%;
+  text-align: center;
+}
+
+header h1 {
+  color: #1d1b1b;
+}
+
+.container {
+  background-color: #fff;
+  height: 100%;
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section {
+  width: 50vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cubo {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+
+.cubo.finalColor {
+  background-color: #000000;
+}
+
+.colorSelector {
+  margin-top: 15px;
+  position: relative;
+}
+
+.base, .blanco, .negro {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  position: fixed;
+}
+
+.base {
+  background: #ff1100;
+}
+
+.blanco {
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(transparent));
+  background: linear-gradient(90deg, #ffffff 0%, transparent 100%);
+}
+
+.negro {
+  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(transparent));
+  background: linear-gradient(0deg, #000000 0%, transparent 100%);
+}
+
+.point {
+  width: 10px;
+  height: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  left: 295px;
+  top: -5px;
+}
+
+aside {
+  width: 50%;
+}
+
+input {
+  width: 90%;
+  height: 20px;
+  margin: 10px;
+}
+
+input.Matiz {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background: -webkit-gradient(linear, left top, right top, from(#FF0000), color-stop(20%, #CCFF00), color-stop(33.35%, #00FF00), color-stop(50%, #00FFFF), color-stop(66.71%, #0000FF), color-stop(83.32%, #FF00FF), to(#FF0000));
+  background: linear-gradient(90deg, #FF0000 0%, #CCFF00 20%, #00FF00 33.35%, #00FFFF 50%, #0000FF 66.71%, #FF00FF 83.32%, #FF0000 100%);
+  border-radius: 10px;
+  height: 28px;
+  -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 0.2px solid #010101;
+  cursor: pointer;
+}
+
+input.Matiz::-webkit-slider-thumb, input.Matiz::-moz-range-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 2px;
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+  margin-top: -14px;
+  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  /* Add cool effects to your sliders! */
+}
+
+input.Transparencia {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  height: 28px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#000000FF));
+  background: linear-gradient(90deg, transparent 0%, #000000FF 100%);
+  border: 0.2px solid #010101;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input.Transparencia::-webkit-slider-thumb, input.Transparencia::-moz-range-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 2px;
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+  margin-top: -14px;
+  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  /* Add cool effects to your sliders! */
+}
+
+input.Brillo {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  height: 28px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#000000FF));
+  background: linear-gradient(90deg, transparent 0%, #000000FF 100%);
+  border: 0.2px solid #010101;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input.Brillo::-webkit-slider-thumb, input.Brillo::-moz-range-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 2px;
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+  margin-top: -14px;
+  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  /* Add cool effects to your sliders! */
+}
+
+input.Saturacion {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  height: 28px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#000000FF));
+  background: linear-gradient(90deg, transparent 0%, #000000FF 100%);
+  border: 0.2px solid #010101;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input.Saturacion::-webkit-slider-thumb, input.Saturacion::-moz-range-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 2px;
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+  margin-top: -14px;
+  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+          box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  /* Add cool effects to your sliders! */
+}
+/*# sourceMappingURL=index.css.map */
